@@ -1,0 +1,55 @@
+{
+  "name": "@jtree03/searchad",
+  "version": "0.1.0",
+  "description": "naver searchad api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jtree03/node-searchad.git"
+  },
+  "homepage": "https://github.com/Jtree03/node-searchad",
+  "bugs": {
+    "url": "https://github.com/Jtree03/node-searchad/issues"
+  },
+  "keywords": [
+    "naver",
+    "naver api",
+    "searchad"
+  ],
+  "author": "jtree03 <wowns0903@gmail.com> (https://www.notion.so/Blog-63d0c9c7c42343e799762f81e46f5c38)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.33",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.3",
+    "typescript": "^4.2.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testRegex": "\\.(test|spec)\\.((js|ts))$",
+    "setupFilesAfterEnv": [
+      "./__test__/setup.ts"
+    ],
+    "cacheDirectory": "./.jest/cache"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix"
+  }
+}
